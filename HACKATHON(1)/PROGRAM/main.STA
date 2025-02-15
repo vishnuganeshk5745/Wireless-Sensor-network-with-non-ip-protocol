@@ -1,0 +1,59 @@
+
+ROM used:   1065/8192 (13%)
+            1065/8192 (13%) including unused fragments
+
+            1.5 Average locations per line
+            36.7 Average locations per statement
+
+RAM used:   12/368 (3%) at main() level
+            37/368 (10%) worst case
+
+Stack used: 2 worst case (2 in main + 0 for interrupts)
+Stack size: 8
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   71    29 100  main.c
+  661     0   0  C:\Program Files (x86)\PICC\Devices\16F877A.h
+----- -----
+  732    29 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     21   2    1             @delay_ms1
+0     99   9    6   297  3.1  main
+0    117  11   13             @MULFF
+ Inline         5             @FTOSD
+0     79   7   13             @DIV3232
+0    230  22   13             @PRINTF_L32D_9600_62_63FPFPF
+0     21   2    3             @DIV88
+0     58   5    2             @PRINTF_U_9600_62_63
+0    331  31   10   171  3.0  get_temperature
+ Inline         2             @ITOF
+ Inline        14             @DIVFF
+0    105  10    3   331  3.9  get_ultrasonic_distance
+ Inline         5             @DIV1616
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              29
+    Comments                121
+    Volume (V)              1064
+    Difficulty (D)          8.8
+    Effort to implement (E) 9388
+    Time to implement (T)   9 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    84
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-007FF  1061  983  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
